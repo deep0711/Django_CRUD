@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Database
+        </title>
+    </head>
+    <body>
+        <h3><a href="{% url 'home' %}">Home</a></h3>
+        <br>
+        <br>
+        {% for data in context %}
+            <h3>Roll No.:{{data.roll}}</br>
+            <h3>Name:{{data.name}}</h3>
+            <h3>Marks:{{data.marks}}</h3>
+            <hr/>
+        {% endfor %}    
+    </body>
+</html>

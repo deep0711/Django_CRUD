@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Search
+        </title>
+    </head>
+    <body>
+        <h2>Enter the roll number to be Deleted:</h2>
+        
+        <form action=" {% url 'delete' %} " method="GET">
+        <p>Enter Roll Number</p>
+        <p><input type="number" name="roll"></p>
+        <p><input type="submit" value="Submit"></p>
+        </form>    
+    </body>
+</html>

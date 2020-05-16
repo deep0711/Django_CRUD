@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>
+            COnfirmation
+        </title>
+    </head>
+    <body>
+        <br>
+        <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1>Are you sure ?</h1>
+        <br>
+        <p><input type="submit" value="Yes"></p>
+        <p><a href="{% url 'home' %}">No</a></p>
+    </body>
+</html>

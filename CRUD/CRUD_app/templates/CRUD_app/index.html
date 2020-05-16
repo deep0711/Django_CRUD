@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>
+            Enter Data
+        </title>
+    </head>
+    <body>
+        
+        <h1>Enter Data</h1>
+        <br>
+        <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <p><input type="submit" value="Submit"></p>
+
+        <h3><a href="{% url 'home' %}">Home</a></h3>
+    </body>
+</html>
